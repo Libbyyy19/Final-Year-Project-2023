@@ -1,0 +1,167 @@
+body {
+    background-image: url('Background1.jpg');
+    background-size: cover;
+}
+
+.login {
+    border: 8px outset black;
+    text-align: center;
+    width: 500px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 16px;
+    margin-left: 22px;
+    background-color: white;
+}
+
+body h1 {
+    font-size: 50px;
+    color: black;
+    text-align: center;
+}
+
+.login-form input[type="password"] {
+    width: 70%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+.login-form input[type="email"] {
+    width: 70%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+.login-form button[type="submit"] {
+    padding: 10px;
+    background-color: lightblue;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+.register {
+    border: 8px outset black;
+    text-align: center;
+    width: 500px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 16px;
+    margin-left: 22px;
+    background-color: white;
+}
+
+.register-form input[type="name"]{
+    width: 70%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 2px solid black;
+    padding-top: 20px;
+}
+
+.register-form input[type="email"]{
+    width: 70%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+.register-form input[type="password"] {
+    width: 70%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+.register-form button[type="submit"]{
+    padding: 10px;
+    background-color: lightblue;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+.homepage {
+    border: 8px outset black;
+    text-align: center;
+    width: 1000px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 16px;
+    margin-left: 22px;
+    background-color: white;
+}
+
+.homepage p {
+    width: 600px;
+    padding-left: 190px;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+
+nav a {
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.login-form a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.register-form a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#score {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#errortxt {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#errormsg {
+    font-size: 25px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#percenmsg {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 20px;
+    font-weight: bold;
+}
