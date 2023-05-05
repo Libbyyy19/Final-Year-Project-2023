@@ -20,19 +20,19 @@
 
             array(
                 'tag' => 'html',
-                'score' => 5,
+                'score' => 15,
                 'error' => 'Your HTML document is invalid due to the missing HTML tag',
             ),
 
             array(
                 'tag' => 'head',
-                'score' => 2.5,
+                'score' => 10,
                 'error' => 'A head tag is needed.',
             ),
 
             array (
                 'tag' => 'body',
-                'score' => 5,
+                'score' => 15,
                 'error' => 'body tag is needed',
             ),
 
@@ -44,25 +44,25 @@
 
             array (
                 'tag-attribute' => 'lang',
-                'score' => 2.5,
+                'score' => 5,
                 'error' => 'language tags are useful'
             ),
 
             array (
                 'tag-attribute' => '!DOCTYPE',
-                'score' => 2.5,
+                'score' => 15,
                 'error' => 'This document will not run due to missing Doctype tag'
             ),
 
             array (
                 'tag-attribute' => 'html',
-                'score' => 2.5,
+                'score' => 15,
                 'error' => 'missing html attribute after DOCTYPE tag, should be as follows: !DOCTYPE html'
             ),
 
             array (
                 'tag' => 'title',
-                'score' => 5,
+                'score' => 10,
                 'error' => 'missing title tag'
             ),
 
@@ -73,7 +73,7 @@
             ),
 
             array (
-                    'style' => 'main',
+                    'style' => 'section',
                 'score' => 5,
                 'error' => 'no style tag so the CSS will not work'
             ),
@@ -85,14 +85,14 @@
                 array (
                         'selector' => 'body',
                     'property' => 'background-color',
-                    'score' => 2.5,
+                    'score' => 10,
                     'error' => 'No Background color, one way to make websites more interactive is by having background colours that grab users attention'
                 ),
 
             array (
                     'selector' => 'body',
                 'property' => 'font-size',
-                'score' => 2.5,
+                'score' => 10,
                 'error' => 'It is always a good idea to change the font-size of your text so it is not too small to read and makes your website more accessible'
             ),
 
@@ -148,10 +148,10 @@
     echo "<div id='errormsg'>- $error\n</div>";
     }
 
-    if ($percentage > 100) {
-        echo "<div id='percenmsg'>Congratulations, perfect score</div>";
-    } elseif ($percentage > 90) {
-        echo "<div id='percenmsg'>Almost all correct, keep an eye out for missing closing tags, and the indentation of your code</div>";
-    } elseif ($percentage > 70) {
+    if ($percentage > 70) {
+        echo "<div id='percenmsg'>Congratulations, keep an eye out for missing tags, and empty tags as these are classed as redundant. </div>";
+    } elseif ($percentage > 60) {
+        echo "<div id='percenmsg'>Almost there! keep an eye out for missing closing tags, and the indentation of your code, also make sure when using div classes to have appropriately labeled IDs so you can refer to your work later on</div>";
+    } elseif ($percentage > 50) {
         echo "<div id='percenmsg'>Keep practicing, Common errors including missing indentation, closing tags missing, or empty tags, be sure to check over the work for any of these missing things</div>";
     }
